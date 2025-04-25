@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melissa Bartz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 400;
+    }
+
+    main.gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding: 40px;
+    }
+
+    main.gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #eee;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      font-size: 12px;
+      border-top: 1px solid #ccc;
+    }
+
+    .socials a {
+      margin-right: 10px;
+    }
+
+    .socials img {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 768px) {
+      main.gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>Melissa Bartz</div>
+    <nav>
+      <a href="#">Work</a>
+      <a href="#">Information</a>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <img src="images/artwork.jpg" alt="Artwork 1">
+    <img src="images/artwork.jpg" alt="Artwork 2">
+    <img src="images/artwork.jpg" alt="Artwork 3">
+    <img src="images/artwork.jpg" alt="Artwork 4">
+    <img src="images/artwork.jpg" alt="Artwork 5">
+    <img src="images/artwork.jpg" alt="Artwork 6">
+    <img src="images/artwork.jpg" alt="Artwork 7">
+    <img src="images/artwork.jpg" alt="Artwork 8">
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+    <div>© Melissa Bartz 2025</div>
+  </footer>
+</body>
+</html>
